@@ -8,6 +8,76 @@
 </head>
 <body>
 	<h1> Git et Github</h1>
+	<p>
+	Visionner le code : créer et gérer  plusieurs versions du projet
+Git : gestion de versions distribuées : chacun récupérer  l’intégralité de copie de projets
+Installer l’outil git : 
+1/ aller sur  https://git-scm.com/
+Sur Windows   https://git-scm.com/download/win
+2/  Téléchargement (droit administrateur)  
+3/ Utiliser le terminal GitBash (git version pour voir si bien installer)
+!! Git GUI est une interface graphique qui permet aussi bien la gestion de versions mais certains commandes doivent être passé sur le terminal !!
+
+Lancer GitBash : 
+pwd : afficher le chemin dans le quel le dossier se trouve
+mkdir +nomDeDossier : make directory/fais un dossier 
+ex mkdir cours_git
+ls (sana param): lister tous les fichiers existants dans le dossier courant
+ls +nomdedossier : lister tous les fichiers existants dans le dossier destinataire
+cd nomDeDossier : nom de dossier qu’on veut accéder
+cd .. : se deplacer 1 dossier en arrière 
+cd +chemin complet : aller à se dossier 
+
+Configurer l’outil Git :
+git config –global  nous donner le nom et l’adresse mail pour l’ensemble de projet  sur notre ordi
+git config –global  user.name  « Anissa Taleb » : pour donner le nom 
+git config --global user.email anissa.ataleb23@gmail.com : pour enregistrer l’adresse mail de l’utilisateur
+git config – global –list : lister la configuration qui était enregistrer 
+git : l’aide de outil git git sans param == git –help
+Reposotory git = Dépôt en fr
+Git init permet de créer un depot git cad créer un dossier cacher qui s’appelle Dossier.git qui va contenir : Histrorique, Zone d’index et autre info pour la gestion
+Dossier de travail ? zone d’index (grouper plusieurs modifs)?commit 
+Git init : initialiser un  dossier dans le dépôt git
+Ls –la : pour afficher/lister les dossiers caches 
+ 
+Git status : donne l’état actuelle de notre environnement de travail 
+ 
+Détection des nouveau fichiers
+Pour indexer les modifications Git add <fichiers>
+
+ 
+Donc prêt a être commit = enregistrer
+On peut desindxer une modif avec git reset file
+ 
+Git add . : mettre toutes les modifs dans la zone dindex
+ 
+
+Git commit m-« xxxxx »
+ 
+
+Git diff : donner les modif existantes entre le workspace et ceux qui sont enregistrer dans la zone d indexation
+
+Git log : liste des commits (avant et Head)
+HEAD est un tag de commit actuel
+Git show « tag » / git show SHA1 (sélectionner + click sur la molette de la souris pour copier) pour voir les détailles d un commit en particulier
+
+Pour se déplacer sur le commit en question :
+Git checkout SHA1
+Pou revenir a la version la plus récente git checkout main
+Créer/Supprimer des Tags :
+!! Attention le Tag main reste toujours sur la version la plus récente
+Les tags qu’on crée nous même ne se déplace pas restent toujours liée au commit tagué
+1/ se positionner sur le commit en question git checkout SHA1
+2/ git tag nomdeTag
+3/ si on veut effacer le tag git tag –delete  nomdeTag
+5/ on peut ajouter un message git tag nomde tag –m »blabla »
+
+Git tag donne la liste de commits tagué uniquement
+
+Git clone de github vers git local
+ 
+
+	</p>
 
 </body>
 </html>
